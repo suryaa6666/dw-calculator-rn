@@ -22,7 +22,7 @@ function TwoOperation() {
   const CheckOperateNumber = (e) => {
     if (!valueA || !valueB) {
       if (valueA == 0 || valueB == 0) return OperateNumber(e);
-      return console.log("isikan angka terlebih dahulu");
+      return setResult("Isikan kedua angka terlebih dahulu...")
     }
     OperateNumber(e);
   };
@@ -127,7 +127,7 @@ function TwoOperation() {
         </Column>
       </Row>
 
-      <Row space={5} style={{ marginTop: 20 }}>
+      <Row space={5} marginTop={4}>
         <Column>
           <TouchableOpacity
             style={{
