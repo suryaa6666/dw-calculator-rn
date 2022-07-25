@@ -33,6 +33,12 @@ function Calculator() {
         setCalculatorNumber("");
         return;
       }
+      if (!lastType) {
+        setLastType(type);
+        setCalculatorNumber("");
+        setResult(result + parseInt(calculatorNumber));
+        return;
+      }
       setLastType(type);
       setResult(result - parseInt(calculatorNumber));
       setCalculatorNumber("");
